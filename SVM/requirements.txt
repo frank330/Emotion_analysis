@@ -1,0 +1,7 @@
+gensim==3.8.1
+jieba==0.39
+joblib==0.13.2
+numpy==1.24.1
+pandas==1.2.4
+PySimpleGUI==4.60.4
+scikit_learn==1.2.0

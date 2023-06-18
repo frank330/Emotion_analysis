@@ -236,7 +236,7 @@ class Trainer():
 
         self.save_model()
         plot_acc(train_accs)
-        plot_loss(train_accs)
+        plot_loss(c_loss)
 
     # @torch.no_grad()中的数据不需要计算梯度，也不会进行反向传播
     @torch.no_grad()

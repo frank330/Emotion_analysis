@@ -296,9 +296,9 @@ if __name__ == '__main__':
     print("Loading data...")
     vocab, train_data, dev_data, test_data = get_data()
     dataloaders = {
-        'train': DataLoader(TextDataset(train_data), 128, shuffle=True),
-        'dev': DataLoader(TextDataset(dev_data), 128, shuffle=True),
-        'test': DataLoader(TextDataset(test_data), 128, shuffle=True)
+        'train': DataLoader(TextDataset(train_data), batch_size, shuffle=True),
+        'dev': DataLoader(TextDataset(dev_data), batch_size, shuffle=True),
+        'test': DataLoader(TextDataset(test_data), batch_size, shuffle=True)
     }
     time_dif = get_time_dif(start_time)
     print("Time usage:", time_dif)
